@@ -44,6 +44,7 @@ import {
   type ISelectOption,
 } from '@moysklad/uikit'
 import './CustomerOrderPage.css'
+import { asset } from '../assets'
 import { SolutionsSidepage } from '../components/SolutionsSidepage'
 
 const navItems: Array<{
@@ -195,7 +196,7 @@ export function CustomerOrderPage() {
   const viewers = useMemo(
     () => [
       { id: '1', label: 'А' },
-      { id: '2', label: 'Морозов С.В.', image: '/mock/avatar.png' },
+      { id: '2', label: 'Морозов С.В.', image: asset('/mock/avatar.png') },
       { id: '3', label: 'Петрова' },
       { id: '4', label: 'Сидоров' },
       { id: '5', label: 'Козлова' },
@@ -209,7 +210,7 @@ export function CustomerOrderPage() {
       <header className="top-chrome">
         <div className="top-chrome__left">
           <div className="top-chrome__logo">
-            <img src="/mock/logo.png" alt="" width={25} height={19} />
+            <img src={asset('/mock/logo.png')} alt="" width={25} height={19} />
           </div>
           <nav className="top-chrome__nav" aria-label="Основное меню">
             {navItems.map(({ label, icon: Icon, active }) => (
@@ -277,7 +278,7 @@ export function CustomerOrderPage() {
             </div>
             <img
               className="top-chrome__avatar"
-              src="/mock/avatar.png"
+              src={asset('/mock/avatar.png')}
               alt=""
               width={36}
               height={36}
@@ -504,7 +505,7 @@ export function CustomerOrderPage() {
               <div className="lv__value lv__value--file">
                 <img
                   className="lv__thumb"
-                  src="/mock/file-preview.png"
+                  src={asset('/mock/file-preview.png')}
                   alt=""
                   width={16}
                   height={16}
@@ -590,7 +591,7 @@ export function CustomerOrderPage() {
         {/* В макете блок «Позиции» — растровое изображение image 146 */}
         <section className="positions-mock">
           <img
-            src="/mock/positions.png"
+            src={asset('/mock/positions.png')}
             alt="Позиции заказа покупателя"
             width={1360}
             height={414}

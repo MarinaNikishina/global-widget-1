@@ -52,6 +52,7 @@ import {
   TurnBackward20Icon,
   type ISelectOption,
 } from '@moysklad/uikit'
+import { asset } from '../assets'
 import './SolutionsSidepage.css'
 
 /** Скрыто: включить, чтобы снова показать избранное (bookmark). */
@@ -163,7 +164,7 @@ type SolutionItem = {
 const SOLUTIONS: SolutionItem[] = [
   {
     id: 'payments',
-    logo: '/mock/solutions/logo-payments.png',
+    logo: asset('/mock/solutions/logo-payments.png'),
     title: 'Автоматическая привязка платежей',
     segment: 'installed',
     body: 'payments',
@@ -172,7 +173,7 @@ const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: 'order',
-    logo: '/mock/solutions/logo-order.png',
+    logo: asset('/mock/solutions/logo-order.png'),
     title: 'Онлайн-заказ',
     segment: 'installed',
     body: 'order-actions',
@@ -181,7 +182,7 @@ const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: 'mailings',
-    logo: '/mock/solutions/logo-mailings.png',
+    logo: asset('/mock/solutions/logo-mailings.png'),
     title: 'Рассылки 365: WhatsApp Telegram MAX SMS Email',
     segment: 'installed',
     body: 'mailings-actions',
@@ -190,7 +191,7 @@ const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: 'robots',
-    logo: '/mock/solutions/logo-robots.png',
+    logo: asset('/mock/solutions/logo-robots.png'),
     title: 'Роботы 365 Автоматизация действий',
     segment: 'installed',
     body: 'robots-actions',
@@ -199,7 +200,7 @@ const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: 'debt',
-    logo: '/mock/solutions/logo-debt.png',
+    logo: asset('/mock/solutions/logo-debt.png'),
     title: 'Установка лимита долга',
     segment: 'installed',
     body: 'debt-settings',
@@ -209,7 +210,7 @@ const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: 'search',
-    logo: '/mock/solutions/logo-search.png',
+    logo: asset('/mock/solutions/logo-search.png'),
     title: 'Умный поиск клиента',
     segment: 'installed',
     body: 'search',
@@ -218,7 +219,7 @@ const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: 'time',
-    logo: '/mock/solutions/logo-time.png',
+    logo: asset('/mock/solutions/logo-time.png'),
     title: 'Учет рабочего времени',
     segment: 'installed',
     body: 'time',
@@ -227,7 +228,7 @@ const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: 'ai-portrait',
-    logo: '/mock/solutions/logo-ai-portrait.png',
+    logo: asset('/mock/solutions/logo-ai-portrait.png'),
     title: 'AI Портрет клиента',
     segment: 'installed',
     body: 'ai-settings',
@@ -237,7 +238,7 @@ const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: 'suppliers',
-    logo: '/mock/solutions/logo-suppliers.png',
+    logo: asset('/mock/solutions/logo-suppliers.png'),
     title: 'Заказы поставщикам',
     segment: 'recommended',
     description:
@@ -247,7 +248,7 @@ const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: 'docs',
-    logo: '/mock/solutions/logo-docs.png',
+    logo: asset('/mock/solutions/logo-docs.png'),
     title: 'Конструктор документов',
     segment: 'recommended',
     description:
