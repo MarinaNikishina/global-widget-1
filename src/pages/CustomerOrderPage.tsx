@@ -196,7 +196,7 @@ export function CustomerOrderPage() {
   const viewers = useMemo(
     () => [
       { id: '1', label: 'А' },
-      { id: '2', label: 'Морозов С.В.', image: asset('/mock/avatar.png') },
+      { id: '2', label: 'Морозов С.В.', image: asset('/mock/avatar.svg') },
       { id: '3', label: 'Петрова' },
       { id: '4', label: 'Сидоров' },
       { id: '5', label: 'Козлова' },
@@ -210,7 +210,7 @@ export function CustomerOrderPage() {
       <header className="top-chrome">
         <div className="top-chrome__left">
           <div className="top-chrome__logo">
-            <img src={asset('/mock/logo.png')} alt="" width={25} height={19} />
+            <img src={asset('/mock/logo.svg')} alt="" width={25} height={19} />
           </div>
           <nav className="top-chrome__nav" aria-label="Основное меню">
             {navItems.map(({ label, icon: Icon, active }) => (
@@ -278,7 +278,7 @@ export function CustomerOrderPage() {
             </div>
             <img
               className="top-chrome__avatar"
-              src={asset('/mock/avatar.png')}
+              src={asset('/mock/avatar.svg')}
               alt=""
               width={36}
               height={36}
